@@ -7737,6 +7737,7 @@ Para una variable con outliers detectados, discute brevemente cómo podrían afe
 Amplía la conclusión final incorporando una valoración general de si el dataset está “listo para modelar” o si requeriría una fase adicional de limpieza y transformación.</p>
 </li>
 </ul>
+<hr/>
 </div>
 </div>
 </div>
@@ -8018,6 +8019,7 @@ None
 </li>
 </ul>
 <p>Dependiendo del tipo de valor nulo, de la importáncia de la variable y de la cantidad de valores nulos, se pueden aplicar distintas técnicas de imputación o simplemente la eliminación de las instancias o de la variable completa.</p>
+<hr/>
 </div>
 </div>
 </div>
@@ -8499,6 +8501,7 @@ Variables de tipo discreto seleccionadas:
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Separar las variables númericas de esta forma (15 binarias, 3 ordinales, 12 discretas), facilitará el estudio para pasos posteriores, ya que tratar de analizar las 30 variables a la vez sería contraproducente.</p>
+<hr/>
 </div>
 </div>
 </div>
@@ -9156,6 +9159,7 @@ Presentan distribuciones muy similares, muchos individuos hacen poco deporte / c
 <li>La mayor diferencia entre escalas de las variables es de 2 ordenes. Las de menor orden son obviamente las variables de carácter binario y las de mayor escala rondan las centenas, variables como <code>oxygen_saturation</code> o <code>air_pollution_index</code> con valores máximos de 100 y 130 respectivamente. A pesar de ello, la mayoría de variables se mueve alrededor del primer orden (decenas).<br/>
 En caso de entrenar modelos de predicción (sobre todo en los que usan cáculos mediante distancias), sería necesario estandartizar las varibales para que ninguna tenga más peso en la predicción que otra simplemente por tener una escala mayor.</li>
 </ul>
+<hr/>
 </div>
 </div>
 </div>
@@ -9213,6 +9217,7 @@ En caso de entrenar modelos de predicción (sobre todo en los que usan cáculos 
 <ul>
 <li>En caso de usar un modelo sensible a outliers debemos tener en cuenta que la presencia de los mismos causará <strong>inflación de la media</strong> así como de la <strong>desviación estándar</strong>, afectando negativamente a tests de hipótesis los cuales asumen normalidad (Tests Paramétricos).</li>
 </ul>
+<hr/>
 </div>
 </div>
 </div>
@@ -9334,6 +9339,8 @@ En caso de entrenar modelos de predicción (sobre todo en los que usan cáculos 
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>A pesar de que se ha comprovado de que no hay valores nulos o instancias duplicadas en el conjunto de datos, aun es temprano considerar que los datos están listos para el modelaje. Los pasos siguientes, anteriores a cualquier modelaje incluirian un análisis de correlación, para determinar si hay variables redundantes así como un escalado de los datos, ya que como se ha visto no todas las escalas en las variables son las mismas.</p>
+<hr/>
+<hr/>
 </div>
 </div>
 </div>
@@ -9673,6 +9680,7 @@ Compara brevemente el rendimiento y la idoneidad de ambos enfoques (lineal vs. l
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Para este proyecto solamente nos centraremos en la columna de <strong>pval</strong>.</p>
 <p>Se observa que ninguno de los valores en la columna es <strong>menor</strong> al nivel de significación definido al principio, por lo que no hay suficiente evidencia estadística para rechazar la hipótesis nula, por lo que se concluye que <strong>hay independencia entre variables</strong>.</p>
+<hr/>
 </div>
 </div>
 </div>
@@ -9764,6 +9772,7 @@ Compara brevemente el rendimiento y la idoneidad de ambos enfoques (lineal vs. l
 </ul>
 <p>El riesgo de cáncer de pulmón emerge de la <strong>interacción entre exposición prolongada y respuesta fisiológica</strong>. Las variables clínicas (<code>fev1_x10</code>, <code>oxygen_saturation</code>, <code>crp_level</code>) son las más discriminativas.</p>
 <p>Según las relaciones observadas en el pairplot, sugiere que modelos con un <strong>enfoque no lineal</strong> capturarán mejor la estructura del problema.</p>
+<hr/>
 </div>
 </div>
 </div>
@@ -10245,6 +10254,7 @@ Durbin-Watson statistic: 2.0029
 <p>Sin embargo, no comprometen de forma significativa la capacidad predictiva del modelo, como lo confirman los valores de RMSE, MAE, MAPE y $R^2$.</p>
 <p>La independencia de los errores, al cumplirse, refuerza tanto la validez del modelo inferencial como su estabilidad predictiva.</p>
 <p>En conjunto, el modelo es válido y coherente para predicción, mientras que para inferencia los resultados son interpretables, pero deben considerarse con cautela o complementarse con técnicas robustas.</p>
+<hr/>
 </div>
 </div>
 </div>
@@ -10711,6 +10721,7 @@ La actividad física regular (<code>exercise_hours_per_week</code>) aparece como
 <li><strong>Factores protectores</strong> asociados a buena función pulmonar, estilo de vida saludable y acceso sanitario.</li>
 </ul>
 <p>La coherencia entre estos resultados y el conocimiento médico previo refuerza tanto la <strong>validez predictiva</strong> como la <strong>interpretabilidad</strong> del modelo logístico entrenado.</p>
+<hr/>
 </div>
 </div>
 </div>
@@ -10723,6 +10734,8 @@ La actividad física regular (<code>exercise_hours_per_week</code>) aparece como
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="2.5--Regresi%C3%B3n-Lineal-VS-Regresi%C3%B3n-Log%C3%ADstica:">2.5  <strong>Regresión Lineal VS Regresión Logística:</strong><a class="anchor-link" href="#2.5--Regresi%C3%B3n-Lineal-VS-Regresi%C3%B3n-Log%C3%ADstica:">¶</a></h3><p>Concretar cuál de los dos modelos es mas idóneo para este conjunto de datos depende del objetivo del estudio. Si el objetivo es establecer relaciones entre variables discretas (ya sea de manera inferencial o predictiva) como se ha hecho en el apartado <code>2.3</code> la <strong>Regresión Lineal</strong> es la mejor opción. Por otro lado si el objetivo es tratar de predecir variables binárias, como en este caso la varibale objetivo, como se ha hecho en la sección <code>2.4</code>, la <strong>Regresión Logística</strong> es la opción correcta.</p>
 <p>A pesar de que ambos modelos tienen el nombre de <strong>regresión</strong>, hay que comprender que cada una se usa en un contexto diferente, son herramientas para distintos problemas. Dependiendo de que tipo de problema sea el objetivo del proyecto se deberan usar unas herramientas u otras.</p>
+<hr/>
+<hr/>
 </div>
 </div>
 </div>
@@ -10979,6 +10992,8 @@ La principal desventaja de este método es que es más costoso computacionalment
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<hr/>
 <h2 id="PARTE-4:-Series-Temporales-(Datos-Simulados)">PARTE 4: Series Temporales (Datos Simulados)<a class="anchor-link" href="#PARTE-4:-Series-Temporales-(Datos-Simulados)">¶</a></h2><p><strong>Objetivo:</strong> Analizar tendencias y estacionalidad en una serie temporal generada.</p>
 <p><strong>Tareas:</strong></p>
 <ol>
@@ -11149,7 +11164,6 @@ Las medias móviles se utilizan para suavizar fluctuaciones de corto plazo y res
 <li>Las medias móviles son rápidas y útiles para exploración.</li>
 <li>La descomposición es más potente para análisis estructural, forecasting y validación de supuestos en modelos temporales.</li>
 </ul>
-<p>En conjunto, ambas herramientas permiten entender qué parte de la serie es crecimiento real, qué parte es cíclica y qué parte es ruido, lo cual es clave antes de aplicar modelos predictivos como ARIMA, SARIMA o modelos basados en machine learning.</p>
 </div>
 </div>
 </div>
